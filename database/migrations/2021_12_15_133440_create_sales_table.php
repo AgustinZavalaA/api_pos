@@ -15,11 +15,6 @@ class CreateSalesTable extends Migration
     {
         Schema::create('sales', function (Blueprint $table) {
             $table->id();
-            $table->integer('product_id');
-            $table->integer('quantity');
-            $table->float('individual_price');
-            $table->float('total');
-            $table->foreignId('sale_header_id')->constrained();
             $table->timestamps();
         });
     }
